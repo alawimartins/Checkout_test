@@ -1,0 +1,27 @@
+.collection {
+  margin: 0;
+}
+
+.container-newdiv {
+  position: relative;
+  padding: 20px 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.container-newdiv h2{
+  font-size: 20px;
+  margin: 0;
+
+}
+
+.container-newdiv p {
+font-style: italic;
+}
+
+.container-newdiv .rate {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-weight: bold;
+}
