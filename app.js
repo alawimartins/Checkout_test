@@ -1,6 +1,4 @@
-
-
-
+//select html element
 const form = document.querySelector("#feedback-form");
 const feedbackList = document.querySelector(".collection");
 const clearBtn = document.querySelector(".clear-feedbacks");
@@ -21,7 +19,7 @@ function loadEventListeners() {
   form.addEventListener("submit", addFeedback);
 }
 
-
+//create and add a div to the body
 function createDiv (name = 'Yasmin', rate='5',feedback='feedback text') {
   const divContainer = document.createElement("div");
   divContainer.className = 'container-newdiv';
@@ -41,8 +39,6 @@ function createDiv (name = 'Yasmin', rate='5',feedback='feedback text') {
   divContainer.appendChild(pFeedback)
 }
 
-
-//add feedback
 function addFeedback(e) {
   e.preventDefault();
   if(feedbackInput.value === "") {
@@ -51,15 +47,10 @@ function addFeedback(e) {
 
   createDiv(nameInput.value, rateInput.value, feedbackInput.value);
 
-
-
-
-
+  //refresh
   form.reset();
 
-
-
-
+ //changed the feedback style by alternating the colours
   const containerEven = document.querySelectorAll(".container-newdiv:nth-child(even)");
   for (let i = 0; i < containerEven.length; i++) {
     containerEven[i].style.background = "#B6E2DA"
